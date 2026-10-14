@@ -1,5 +1,10 @@
+"""
+This module takes text and returns what emotions the text conveys
+as well as highlighting the most dominant one.
+"""
 import requests
 import json
+
 
 def emotion_detector(text_to_analyze):
     url = 'https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
